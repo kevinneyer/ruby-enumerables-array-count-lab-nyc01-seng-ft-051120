@@ -2,8 +2,7 @@ def count_strings(array)
   # Return the total number of strings in the provided array using the count enumerable
 
   array.count do |pump|
-   if pump.to_s == array.to_s 
-   pump
+   pump == array.to_s
   end 
 end
 
